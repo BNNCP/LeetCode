@@ -1,0 +1,22 @@
+public class SalesOrderDetailBackup
+{
+    private Entity entity { get; set; }
+    public SalesOrderDetailBackup(Entity _entity)
+    {
+        this.entity = _entity
+    }
+
+    public void Execute(Entity target, string action)
+    {
+        Dictionary<string, Action> ActionMap = new Dictionary<string, Action>
+        {
+            {(string)SalesOrderDetailBackupAction.CopyToOrder,()=>this.CopyToOrder(target)},
+        }
+        return ActionMap[action].Invoke(target);
+    }
+
+    private Entity CopyToOrder(Entity target)
+    {
+        return target;
+    }
+}

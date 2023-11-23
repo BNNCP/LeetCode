@@ -17,7 +17,6 @@ public class Solution
             else if (input[md] > input[md + 1])
             {
                 rp = md - 1;
-
             }
             else
             {

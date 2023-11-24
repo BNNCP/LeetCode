@@ -1,29 +1,37 @@
-public class Solution {
-    public int[] SuccessfulPairs(int[] spells, int[] potions, long success) {
-        QuickSort(potions,0,potions.Length-1);
+public class Solution
+{
+    public int[] SuccessfulPairs(int[] spells, int[] potions, long success)
+    {
+        // QuickSort(potions, 0, potions.Length - 1);
+        Array.Sort(potions);
         int[] result = new int[spells.Length];
 
-        for(int i = 0;i<spells.Length;i++){
+        for (int i = 0; i < spells.Length; i++)
+        {
             int index = potions.Length;
             int l = 0;
-            int r = potions.Length-1;
-            while(l<=r){
-                int m = (l+r)/2;
-                if(spells[i]*potions[m]>=success){
-                    r = m-1;
+            int r = potions.Length - 1;
+            while (l <= r)
+            {
+                int m = (l + r) / 2;
+                if ((long)spells[i] * potions[m] >= success)
+                {
+                    r = m - 1;
                     index = m;
                 }
-                else{
-                    l=m+1;
+                else
+                {
+                    l = m + 1;
                 }
             }
-            result[i] = potions.Length-index;
+            result[i] = potions.Length - index;
         }
         return result;
     }
 
-    public void QuickSort(int[] arr, int Lpointer, int Rpointer){
-        if(Rpointer<Lpointer) return;
+    public void QuickSort(int[] arr, int Lpointer, int Rpointer)
+    {
+        if (Rpointer < Lpointer) return;
         int pivot = partition(arr, Lpointer, Rpointer);
         QuickSort(arr, Lpointer, pivot - 1);
         QuickSort(arr, pivot + 1, Rpointer);

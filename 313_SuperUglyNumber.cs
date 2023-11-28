@@ -3,27 +3,23 @@ public class Solution
     public int NthSuperUglyNumber(int n, int[] primes)
     {
         int[] dp = new int[n];
+        int[] idx = new int[primes.Length];
         dp[0] = 1;
-
-        int[] pointers = new int[primes.Length];
 
         for (int i = 1; i < n; i++)
         {
-            int min = int.MaxValue;
+            dp[i] = int.MaxValue;
             for (int j = 0; j < primes.Length; j++)
             {
-                min = Math.Min(min, dp[pointers[j]] * primes[j]);
+                dp[i] = Math.Min(dp[i], dp[idx[j]] * primes[j]);
             }
-            dp[i] = min;
 
-            for (int j = 0; j < primes.Length; j++)
+            for (int j = 0; j < primes.length; j++)
             {
-                if (dp[pointers[j]] * primes[j] == min)
-                {
-                    pointers[j]++;
-                }
+                while (primes[j] * dp[idx[j]] <= dp[i]) idx[j]++;
             }
         }
+
         return dp[n - 1];
     }
 

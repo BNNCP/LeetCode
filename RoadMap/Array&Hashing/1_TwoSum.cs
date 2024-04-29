@@ -9,7 +9,7 @@ public class Solution
             int dif = target - nums[i];
             if (hashmap.ContainsKey(dif))
             {
-                return new int[] { hashmap[dif], i};
+                return new int[] { hashmap[dif], i };
             }
             else
             {

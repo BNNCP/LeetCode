@@ -1,0 +1,15 @@
+E:\user\desktop\leetcode\LeetCode\ConsoleApp\bin\Debug\net7.0\ConsoleApp.exe
+E:\user\desktop\leetcode\LeetCode\ConsoleApp\bin\Debug\net7.0\ConsoleApp.deps.json
+E:\user\desktop\leetcode\LeetCode\ConsoleApp\bin\Debug\net7.0\ConsoleApp.runtimeconfig.json
+E:\user\desktop\leetcode\LeetCode\ConsoleApp\bin\Debug\net7.0\ConsoleApp.dll
+E:\user\desktop\leetcode\LeetCode\ConsoleApp\bin\Debug\net7.0\ConsoleApp.pdb
+E:\user\desktop\leetcode\LeetCode\ConsoleApp\obj\Debug\net7.0\ConsoleApp.csproj.AssemblyReference.cache
+E:\user\desktop\leetcode\LeetCode\ConsoleApp\obj\Debug\net7.0\ConsoleApp.GeneratedMSBuildEditorConfig.editorconfig
+E:\user\desktop\leetcode\LeetCode\ConsoleApp\obj\Debug\net7.0\ConsoleApp.AssemblyInfoInputs.cache
+E:\user\desktop\leetcode\LeetCode\ConsoleApp\obj\Debug\net7.0\ConsoleApp.AssemblyInfo.cs
+E:\user\desktop\leetcode\LeetCode\ConsoleApp\obj\Debug\net7.0\ConsoleApp.csproj.CoreCompileInputs.cache
+E:\user\desktop\leetcode\LeetCode\ConsoleApp\obj\Debug\net7.0\ConsoleApp.dll
+E:\user\desktop\leetcode\LeetCode\ConsoleApp\obj\Debug\net7.0\refint\ConsoleApp.dll
+E:\user\desktop\leetcode\LeetCode\ConsoleApp\obj\Debug\net7.0\ConsoleApp.pdb
+E:\user\desktop\leetcode\LeetCode\ConsoleApp\obj\Debug\net7.0\ConsoleApp.genruntimeconfig.cache
+E:\user\desktop\leetcode\LeetCode\ConsoleApp\obj\Debug\net7.0\ref\ConsoleApp.dll

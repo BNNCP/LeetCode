@@ -1,0 +1,4 @@
+/* Write your T-SQL query statement below */
+
+Select stock_name, Sum(Case When operation  = 'Sell' Then price else price*-1 end) as capital_gain_loss  from Stocks
+Group By stock_name;

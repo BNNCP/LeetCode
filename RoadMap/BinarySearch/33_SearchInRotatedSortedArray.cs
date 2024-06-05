@@ -18,9 +18,9 @@ public class Solution
                 return mid;
             }
 
-            if (nums[lp] <= nums[mid])
+            if (nums[mid] >= nums[lp])
             {
-                if (nums[lp] <= target && target < nums[mid])
+                if (nums[lp] <= target && nums[mid] > target)
                 {
                     rp = mid - 1;
                 }
@@ -32,7 +32,7 @@ public class Solution
 
             else
             {
-                if (nums[mid] < target && target <= nums[rp])
+                if (nums[rp] >= target && nums[mid] < target)
                 {
                     lp = mid + 1;
                 }

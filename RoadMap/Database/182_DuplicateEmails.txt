@@ -1,0 +1,20 @@
+/* Write your T-SQL query statement below */
+Select email from Person
+group by email
+Having Count(id) > 1;
+
+Input: 
+Person table:
++----+---------+
+| id | email   |
++----+---------+
+| 1  | a@b.com |
+| 2  | c@d.com |
+| 3  | a@b.com |
++----+---------+
+Output: 
++---------+
+| Email   |
++---------+
+| a@b.com |
++---------+

@@ -5,23 +5,29 @@ public class Solution
         return BinarySearch(matrix, target);
     }
 
-    private bool BinarySearch(int[][] matrix, target)
+    private bool BinarySearch(int[][] matrix, int target)
     {
-        int lp = 0;
-        int rp = matrix.Length - 1;
+        int row = 0;
+        int col = matrix[0].Length - 1;
 
-        while (lp <= rp)
+        while (row < matrix.Length && col >= 0)
         {
-            int mid = (lp + rp) / 2;
+            int cur = matrix[row][col];
 
-            if (matrix[mid][0] > target)
+            if (cur == target)
             {
-                rp = mid - 1;
+                return true;
             }
-            else if (matrix[mid][matrix[mid].Length - 1] < target)
+            else if (cur > target)
             {
-                lp = mid + 1;
+                col--;
+            }
+            else if (cur < target)
+            {
+                row++;
             }
         }
+
+        return false;
     }
 }

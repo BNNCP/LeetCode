@@ -3,9 +3,9 @@ Select d.name as Department, e.name as Employee, e.salary as Salary from Employe
 inner join Department as d on e.departmentId = d.id
 where e.salary in (
     Select MAX(salary) FROM Employee
+    where Employee.departmentId = d.id
     GROUP BY departmentId
 );
-
 Input: 
 Employee table:
 +----+-------+--------+--------------+
